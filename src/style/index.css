@@ -33,6 +33,7 @@ header > h1 {
 
 main {
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 1.5rem;
     margin: 1rem 2rem;
@@ -74,6 +75,22 @@ main > form {
 
 main > img {
     align-self: center;
-    max-width: 100%;
+    max-width: 95vw;
     height: auto;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem;
+    background-color: #002244;
+    font-size: 1.5rem;
+    color: #7CB9E8;
+}
+
+@media only screen and (max-width: 850px) {
+    :root {
+        font-size: 0.8rem;
+    }
+  }
